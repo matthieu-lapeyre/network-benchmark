@@ -37,10 +37,11 @@ class NetworkLatencyBenchmark(object):
         self.wifi_latency = numpy.array(self.wifi_latency)
 
     def get_results(self):
-        print 'mean latency', numpy.mean(self.wifi_latency), 'ms'
-        print 'std latency', numpy.std(self.wifi_latency), 'ms'
-        print '95% latency', numpy.percentile(self.wifi_latency, 50), 'ms'
-        print 'timeout', self.wifi_timeout * 100, '%'
+        print 'mean latency:', numpy.mean(self.wifi_latency), 'ms'
+        print 'std latency:', numpy.std(self.wifi_latency), 'ms'
+        print '99% latency:', numpy.percentile(self.wifi_latency, 50), 'ms'
+        print '95% latency:', numpy.percentile(self.wifi_latency, 50), 'ms'
+        print 'timeout:', self.wifi_timeout * 100, '%'
 
 
 if __name__ == '__main__':
