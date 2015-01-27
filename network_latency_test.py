@@ -54,7 +54,7 @@ if __name__ == '__main__':
     n_sample = int(sys.argv[2]) if len(sys.argv) == 3 else 100
 
     network = NetworkLatencyBenchmark(ip)
-    # network.print_status = False
+    network.print_status = False
 
     network.run_test(n_sample)
     network.get_results()
