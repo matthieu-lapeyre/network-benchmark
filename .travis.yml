@@ -1,13 +1,10 @@
 language: python
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
+    - 2.7
+    - 3.4
+
 install:
   - sudo pip install numpy pexpect
-  - sudo  apt-get install ping
+  - sudo apt-get install ping
 # command to run tests
 script: python network_test.py 8.8.8.8 10 200
