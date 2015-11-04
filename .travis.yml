@@ -6,7 +6,7 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
-
-install: true
+install:
+  - python network_test.py 8.8.8.8 10 200
 # command to run tests
-script: python network_test.py 8.8.8.8 10 200
+script: nosetests
