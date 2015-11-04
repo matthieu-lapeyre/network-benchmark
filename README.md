@@ -1,10 +1,10 @@
 # network-benchmark
-**This piece of code is originanly forked from the latency tester of FlipperPA: https://github.com/FlipperPA/latency-tester**
+**This piece of code is originanly forked from : https://github.com/matthieu-lapeyre/network-benchmark**
 
 You can quickly evaluate the latency of your network and obtain mean, std, percentile, timeout data. 
-Usage is `python network_latency_test.py <ip> <n_sample>` for example you can run:
+Usage is `python network_latency_test.py <ip> <n_sample> <timeout>` for example you can run:
 ```console
-python network_latency_test.py 192.168.0.1 50
+python network_latency_test.py 192.168.0.1 50 1300
 ```
 and the output will be something like this:
 
