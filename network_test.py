@@ -3,7 +3,7 @@ import pexpect
 
 
 class NetworkLatencyBenchmark(object):
-    def __init__(self, ip):
+    def __init__(self, ip, timeout=1200):
         object.__init__(self)
 
         self.ip = ip
@@ -12,14 +12,14 @@ class NetworkLatencyBenchmark(object):
         ping_command = 'ping -i ' + str(self.interval) + ' ' + self.ip
         self.ping = pexpect.spawn(ping_command)
 
-        self.ping.timeout = 1200
+        self.ping.timeout = timeout
         self.ping.readline()  # init
 
         self.wifi_latency = []
         self.wifi_timeout = 0
         self.print_status = True
 
-    def run_test(self, n_sample):
+    def run_test(self, n_sample=100):
         for n in xrange(n_sample):
             p = self.ping.readline()
 
@@ -47,12 +47,14 @@ class NetworkLatencyBenchmark(object):
 if __name__ == '__main__':
     import sys
 
-    if len(sys.argv) < 2:
-        print "usage: python network_latency_test.py <ip> <n_sample>"
+    if len(sys.argv) < 3:
+        print "usage: python network_latency_test.py <ip> <n_sample> <timeout>"
         sys.exit(1)
 
     ip = sys.argv[1]
-    n_sample = int(sys.argv[2]) if len(sys.argv) == 3 else 100
+    n_sample = int(sys.argv[2]) 
+    n_sample = int(sys.argv[3]) 
+    
 
     network = NetworkLatencyBenchmark(ip)
     network.print_status = False
