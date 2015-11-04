@@ -5,6 +5,6 @@ python:
 
 install:
   - sudo pip install numpy pexpect
-  - sudo apt-get install ping
+  - sudo apt-get install iputils-ping
 # command to run tests
 script: python network_test.py 8.8.8.8 10 200
