@@ -7,6 +7,7 @@ python:
   - "3.4"
   - "3.5"
 install:
+  - pip install numpy pexpect
   - python network_test.py 8.8.8.8 10 200
 # command to run tests
 script: nosetests
