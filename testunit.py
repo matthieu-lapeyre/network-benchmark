@@ -14,7 +14,7 @@ class PingTest(unittest.TestCase):
 
     def testPingWrongDNS(self):
         try:
-            assert network_test.NetworkLatencyBenchmark('google.com') is not None
+            assert network_test.NetworkLatencyBenchmark('google.cx') is not None
         except IndexError:
             pass
         except e:
