@@ -4,7 +4,8 @@ python:
   - "2.7"
 
 install:
-  - sudo pip install numpy pexpect
   - sudo apt-get -y install iputils-ping
+  - pip install --upgrade pip
+  - pip install numpy pexpect
 # command to run tests
 script: python network_test.py 8.8.8.8 5 200
