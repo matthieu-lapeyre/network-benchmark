@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+
+install:
+  - sudo apt-get -y install iputils-ping
+  - pip install --upgrade pip
+  - pip install numpy pexpect
+# command to run tests
+script: python testunit.py
