@@ -1,5 +1,5 @@
 # network-benchmark
-**This piece of code is originanly forked from : https://github.com/matthieu-lapeyre/network-benchmark**
+**This piece of code is originanly forked from FlipperPA: https://github.com/FlipperPA/latency-tester**
 
 [![Build Status](https://travis-ci.org/Flukas88/network-benchmark.svg?branch=master)](https://travis-ci.org/Flukas88/network-benchmark)
 
