@@ -53,10 +53,10 @@ if __name__ == '__main__':
 
     ip = sys.argv[1]
     n_sample = int(sys.argv[2]) 
-    n_sample = int(sys.argv[3]) 
+    timeout = int(sys.argv[3]) 
     
 
-    network = NetworkLatencyBenchmark(ip)
+    network = NetworkLatencyBenchmark(ip,timeout)
     network.print_status = False
 
     network.run_test(n_sample)
