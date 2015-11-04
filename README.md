@@ -4,7 +4,7 @@
 You can quickly evaluate the latency of your network and obtain mean, std, percentile, timeout data. 
 Usage is `python network_latency_test.py <ip> <n_sample> <timeout>` for example you can run:
 ```console
-python network_latency_test.py 192.168.0.1 50 1300
+python network_test.py 192.168.0.1 50 1300
 ```
 and the output will be something like this:
 
