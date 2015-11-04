@@ -7,6 +7,7 @@ python:
   - "3.4"
   - "3.5"
 install:
-  - pip install numpy pexpect
+  - sudo pip install numpy pexpect
+  - sudo  apt-get install ping
 # command to run tests
 script: python network_test.py 8.8.8.8 10 200
