@@ -1,10 +1,7 @@
 # network-benchmark
 **This piece of code is originanly forked from : https://github.com/matthieu-lapeyre/network-benchmark**
 
-
-![Status](https://travis-ci.org/Flukas88/network-benchmark.svg?branch=master)
-
-
+[![Build Status](https://travis-ci.org/Flukas88/network-benchmark.svg?branch=master)](https://travis-ci.org/Flukas88/network-benchmark)
 
 You can quickly evaluate the latency of your network and obtain mean, std, percentile, timeout data. 
 Usage is `python network_latency_test.py <ip> <n_sample> <timeout>` for example you can run:
