@@ -20,25 +20,9 @@ class PingTest(unittest.TestCase):
         except e:
             self.fail('Failed with exception: ', e)
 
-    def testPingWrongDNSCustomTimeout(self):
-        try:
-            assert network_test.NetworkLatencyBenchmark('google.com', 300) is not None
-        except IndexError:
-            pass
-        except e:
-            self.fail('Failed with exception: ', e)
-
     def testPingWrongNoDNS(self):
         try:
-            assert network_test.NetworkLatencyBenchmark('google.com', 300) is not None
-        except IndexError:
-            pass
-        except e:
-            self.fail('Failed with exception: ', e)
-
-    def testPingWrongNoDNSCustomTimeout(self):
-        try:
-            assert network_test.NetworkLatencyBenchmark('google.com', 300) is not None
+            assert network_test.NetworkLatencyBenchmark('256.232.111.0') is not None
         except IndexError:
             pass
         except e:
