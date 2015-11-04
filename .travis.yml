@@ -7,4 +7,4 @@ install:
   - pip install --upgrade pip
   - pip install numpy pexpect
 # command to run tests
-script: python network_test.py 8.8.8.8 5 200
+script: python testunit.py
