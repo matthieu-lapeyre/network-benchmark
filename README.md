@@ -1,7 +1,7 @@
 # network-benchmark
 **This piece of code is originanly forked from FlipperPA: https://github.com/FlipperPA/latency-tester**
 
-[![Build Status](https://travis-ci.org/matthieu-lapeyre/network-benchmark.svg?branch=master)](https://travis-ci.org/Flukas88/network-benchmark)
+[![Build Status](https://travis-ci.org/matthieu-lapeyre/network-benchmark.svg?branch=master)](https://travis-ci.org/matthieu-lapeyre/network-benchmark)
 
 You can quickly evaluate the latency of your network and obtain mean, std, percentile, timeout data. 
 Usage is `python network_test.py <ip> <n_sample> <timeout>` for example you can run:
